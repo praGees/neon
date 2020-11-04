@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap" rel="stylesheet"> 
+    <title>Neon</title>
+
+</head>
+<body>
+    <button>Zgaś</button>
+    <ul>
+        <li>P</li>
+        <li>R</li>
+        <li>A</li>
+        <li>D</li>
+        <li>A</li>
+        <li>W</li>
+        <li>N</li>
+        <li>Y</li>
+        <li>.</li>
+        <li>P</li>
+        <li>L</li>
+    </ul>
+
+    <script>
+        var button = document.querySelector("button");
+         button.addEventListener("click", function(){
+           if (this.textContent == "Odpal"){
+               this.textContent = "Zgaś"; 
+           }
+           else{ (this.textContent = "Odpal");
+           }
+        const letters = document.querySelectorAll("li");
+        for(var i = 0; letters.length > i; i++){
+            letters[i].classList.toggle("off");
+        }   
+         })
+
+    </script>
+</body>
+</html>
